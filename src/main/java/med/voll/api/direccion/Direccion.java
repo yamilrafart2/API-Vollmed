@@ -30,4 +30,36 @@ public class Direccion {
         this.estado = direccion.estado();
 
     }
+
+    public void actualizarDireccion(DatosDireccion direccion) {
+
+        if (direccion.calle() != null) {
+            this.calle = direccion.calle();
+        }
+
+        if (direccion.numero() != null) {
+            this.numero = direccion.numero();
+        }
+
+        if (direccion.complemento() != null) {
+            this.complemento = direccion.complemento();
+        }
+
+        if (direccion.barrio() != null) {
+            this.barrio = direccion.barrio();
+        }
+
+        if (direccion.codigoPostal() != null) {
+            this.codigoPostal = direccion.codigoPostal();
+        }
+
+        if (direccion.ciudad() != null) {
+            this.ciudad = direccion.ciudad();
+        }
+
+        if (direccion.estado() != null) {
+            this.estado = direccion.estado();
+        }
+
+    }
 }
