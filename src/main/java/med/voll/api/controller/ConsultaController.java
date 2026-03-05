@@ -23,8 +23,9 @@ public class ConsultaController {
 
         System.out.println("\ndatos\n");
 
-        reserva.reservar(datos);
-        return ResponseEntity.ok(new DatosDetalleConsulta(null, null, null, null));
+        var detalleConsulta = reserva.reservar(datos);
+
+        return ResponseEntity.ok(detalleConsulta);
 
     }
 
